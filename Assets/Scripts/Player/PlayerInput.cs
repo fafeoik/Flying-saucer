@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
@@ -14,7 +12,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        _moveInput = Vector2.up * Input.GetAxis("Horizontal") + Vector2.right * Input.GetAxis("Vertical");
+        _moveInput = Vector2.right * Input.GetAxis("Horizontal") + Vector2.up * Input.GetAxis("Vertical");
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
             CatchPressed?.Invoke();

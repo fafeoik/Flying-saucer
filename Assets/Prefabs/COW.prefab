@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3091987099145189408}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3091987099145189410}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 3091987099145189412}
   - component: {fileID: 3091987099142105350}
   - component: {fileID: 3091987097953240429}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,8 +179,8 @@ GameObject:
   - component: {fileID: 3091987099145189414}
   - component: {fileID: 3091987099137955782}
   - component: {fileID: 3091987098349288641}
-  - component: {fileID: 3091987098349288654}
-  m_Layer: 0
+  - component: {fileID: 1908304924}
+  m_Layer: 6
   m_Name: COW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,6 +226,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!54 &3091987098349288641
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -242,7 +243,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3091987098349288654
+--- !u!114 &1908304924
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -251,12 +252,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3091987099145217030}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db9269421d261c4a8f86f142e01e094, type: 3}
+  m_Script: {fileID: 11500000, guid: 621f6b074b5e3aa4ca40647467222ea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpPower: 3
-  _animator: {fileID: 3091987099137955782}
-  _deadCowPrefab: {fileID: 5021798656258249607, guid: ecf1d380407f62e459309c2281a3a8cd, type: 3}
+  _jumpPower: 2.5
+  _deadCowPrefab: {fileID: 5021798656258249607, guid: ecf1d380407f62e459309c2281a3a8cd,
+    type: 3}
+  _minJumpTime: 1
+  _maxJumpTime: 2
 --- !u!1 &3091987099145217032
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +269,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3091987099145189416}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LF_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +300,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3091987099145189418}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +332,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3091987099145189420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Head_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3091987099145189422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +395,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3091987099145189424}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RL_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3091987099145189426}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,7 +458,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3091987099145189428}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RF_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -486,7 +489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3091987099145189430}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,7 +521,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3091987099145189432}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RR_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,7 +552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3091987099145189434}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,7 +584,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3091987099145189436}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Root 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -617,7 +620,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3091987099145189438}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
